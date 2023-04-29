@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aaron Cabeza">
+
+    <title>Aaron's Personal Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="nav">
+        <a href="#home_link">HOME</a>
+        <a href="#about_link">ABOUT</a>
+        <a href="#work_link">WORK</a>
+        <a href="#contact_link">CONTACT</a>
+    </div>
+    <div id="main_body">
+        <h1 id="home_link"> My name is Aaron, and</h1>
+        <h2> I'm a software engineer studying Data Science @ UC Berkeley.</h2>
+        <div id="image-logo"> 
+            <img src="./Berkeley_Logo.png" alt="berkeley_log" id="berkeley-logo"></div>
+        <br>
+        <h3> Languages:</h3>
+        <br>
+        <ol>
+            <li>Python</li>
+            <br>
+            <li>Java</li>
+            <br>
+            <li>JavaScript</li>
+            <br>
+            <li>C</li>
+            <br>
+        </ol>
+        <div class="work-intro">
+            <h3 id="work_link">Some of my work</h3>
+            <br>
+        </div>
+        <div id="school-projects">
+            <h5>Budgeting App</h5>
+            <p>Created a budgeting app using Python and SQL that uses Plaid API to connect to your personal bank account.</p>
+            <p>Uses data from personal bank account to present sevaral charts and graphs that are useful for creating a budget.</p>
+            <br>
+            <h5>Gitlet</h5>
+            <p>Developed a simple version control system in Java that is similar to the functionality from the Git control system.</p>
+            <br>
+            <h5>Housing Model</h5>
+				<p>Used public housing data to create a linear regression model to predict the price of homes.</p>
+            <br>
+            <br>
+        </div>
+    </div>
+
+    <form id="form-text">
+		<label for="name">What is your name?</label>
+		<input type="text" id="name" name="name" required>
+		<button type="submit">Submit</button>
+        <br>
+	</form>
+
+    <script>
+		const form = document.querySelector('form');
+		form.addEventListener('submit', (event) => {
+			event.preventDefault();
+			const name = document.querySelector('#name').value;
+			const greeting = `Have a good day/night ${name}!`;
+			alert(greeting);
+			form.reset();
+		});
+	</script>
+    <br>
+    <a href="https://fullstackdecal.com/" target="_blank">Click on me to go to my favorite website!</a>
+    <br>
+    <br>
+    <br>
+    <div id="contact">
+        <h4 id="contact_link"> Contact Me</h4>
+        <p> 
+            Email me at
+            <a href="mailto:aar0nhlc.11@berkeley.edu">aar0nhlc.11@berkeley.edu</a>
+        </p>
+    </div>
+    <br>
+    <button onclick="showBio()">More About Me!</button>
+    <p id="bio" style="display:none">I am from Los Angeles and I enjoy listening to music and playing sports. My favorite sports teams are the LA Lakers and Real Madrid.</p>
+
+    <script>
+    function showBio() {
+    var bio = document.getElementById("bio");
+    if (bio.style.display === "none") {
+        bio.style.display = "block";
+    } else {
+        bio.style.display = "none";
+    }
+    }
+    </script>
+    <br>
+    <h6>:)</h6>
+</body>
+</html>

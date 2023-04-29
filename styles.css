@@ -1,0 +1,72 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    color:black;
+}
+
+.nav {
+    color: black;
+    display: flex;
+    position: fixed;
+    right: 5px;
+    top: 5px;
+}
+
+.nav:hover {
+    font-size: large;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: lighter;
+    margin-right: 10px;
+}
+
+
+#header {
+    position: absolute;
+    left: 5%;
+    right: 17.86%;
+    top: 18.24%;
+    bottom: 37.13%;
+}
+
+#work-intro {
+    position: absolute;
+    left: 2.71%;
+    right: 28.85%;
+    top: 41.81%;
+    bottom: 48.1%;
+}
+
+#image-logo {
+    display: grid;
+}
+
+#form-text {
+    font-family: 'Roboto', sans-serif;
+}
+#berkeley-logo {
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+#contact {
+    position: relative;
+}
+
+#schoolprojects {
+
+    position: absolute;
+    left: 5.36%;
+    right: 78.49%;
+    top: 67.56%;
+    bottom: 26.72%;
+}
